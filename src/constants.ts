@@ -108,7 +108,7 @@ export const ITINERARY: DayPlan[] = [
   {
     day: 1,
     date: '9/25',
-    image: '/images/day1-kumamoto.jpg',
+    image: '/images/day1.png',
     items: [
       { id: '1-1', time: '04:00', location: '家裡', description: '出發前往桃園機場', mapUrl: '' },
       { id: '1-2', time: '07:30', location: '桃園機場', description: '星宇 JX846 ➔ 熊本機場', mapUrl: 'https://maps.google.com/?q=Taoyuan+International+Airport' },
@@ -124,7 +124,7 @@ export const ITINERARY: DayPlan[] = [
   {
     day: 2,
     date: '9/26',
-    image: '/images/day2-itoshima.jpg',
+    image: '/images/day2.png',
     items: [
       { id: '2-1', time: '07:00', location: '早餐', description: '早餐自理', mapUrl: '' },
       { id: '2-2', time: '08:00', location: '熊本-博多', description: '搭乘新幹線', mapUrl: '' },
@@ -144,7 +144,7 @@ export const ITINERARY: DayPlan[] = [
   {
     day: 3,
     date: '9/27',
-    image: '/images/day3-noko.jpg',
+    image: '/images/day3.png',
     items: [
       { id: '3-1', time: '07:00', location: '早餐', description: '早餐自理', mapUrl: '' },
       { id: '3-2', time: '08:00', location: '熊本-博多', description: '搭乘新幹線', mapUrl: '' },
@@ -161,7 +161,7 @@ export const ITINERARY: DayPlan[] = [
   {
     day: 4,
     date: '9/28',
-    image: '/images/day4-airport.jpg',
+    image: '/images/day4.png',
     items: [
       { id: '4-1', time: '07:00', location: '飯店', description: '辦理退房', mapUrl: '' },
       { id: '4-2', time: '07:43', location: '產交巴士', description: '搭乘巴士前往機場', mapUrl: '' },
