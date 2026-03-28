@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  --color-latte-light: #F5F5F0;
+  --color-latte-paper: #FCFCFA;
+  --color-latte-accent: #A38B7E;
+  --color-latte-warm: #BCA38B;
+
+  --radius-xl: 12px;
+}
+
+@layer base {
+  html, body {
+    overscroll-behavior: none;
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    @apply font-sans bg-latte-paper text-slate-800 antialiased font-medium;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  h1, h2, h3, .serif {
+    @apply font-serif;
+  }
+}
+
+.magazine-shadow {
+  box-shadow: 0 4px 20px rgba(163, 139, 126, 0.1);
+}
+
+.glass-nav {
+  @apply bg-latte-light/80 backdrop-blur-md border-t border-latte-accent/10;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.animate-shake {
+  animation: shake 0.2s ease-in-out 0s 2;
+}
+
+/* 手機圖示相容性修正 */
+svg {
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
